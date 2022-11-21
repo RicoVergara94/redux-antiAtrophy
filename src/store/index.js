@@ -1,5 +1,6 @@
 import { createStore } from "redux";
 
-const reducerFn = (state, action) => {};
+const reducerFn = (state = { count: 0 }, action) => {};
 
-const Store = createStore(reducer);
+const store = createStore(reducer);
+export default store;
