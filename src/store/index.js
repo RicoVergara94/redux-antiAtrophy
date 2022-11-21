@@ -13,6 +13,12 @@ const reducerFn = (state = { counter: 0 }, action) => {
       counter: state.counter - action.payload,
     };
   }
+  if (action.type === "ADD-BY") {
+    return {
+      counter: state.counter + action.payload,
+    };
+  }
+
   return state;
 };
 
